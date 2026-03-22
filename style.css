@@ -681,5 +681,5 @@ a {
   }
 }
 .hero-actions {
-  display: none;
+  display: none !important;
 }
