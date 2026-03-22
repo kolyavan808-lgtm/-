@@ -659,13 +659,38 @@ a {
     flex-direction: column;
   }
 }
-.hero {
-  background-image: url("assets/лох.jpg");
+.hero-bg {
+  background-image:
+    linear-gradient(120deg, rgba(4, 10, 18, 0.72), rgba(5, 12, 23, 0.52)),
+    url("assets/лох.jpg");
   background-size: cover;
   background-position: center;
-  color: white;
-  padding: 100px 20px;
+  background-repeat: no-repeat;
 }
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.place-card {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.place-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+.place-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .place-body {
   padding: 12px;
 }
@@ -678,37 +703,90 @@ a {
   font-size: 14px;
 }
 
-.places-grid {
-  display: flex !important;
-  justify-content: center !important;
-  gap: 20px !important;
-  flex-wrap: nowrap !important;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
 }
 
-.place-card {
-  width: 300px !important;
-  min-width: 300px !important;
-  max-width: 300px !important;
-  margin: 0 !important;
-}
-
-.place-image {
-  height: 180px !important;
-  overflow: hidden !important;
-}
-
-.place-image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-}
 .gallery-card {
   height: 250px;
+  min-height: 250px;
 }
 
 .gallery-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .places-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .facts-layout,
+  .facts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    max-width: none;
+    font-size: 56px;
+  }
+
+  .hero-card,
+  .sources-box,
+  .info-card,
+  .fact-item,
+  .place-body,
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .places-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .place-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .place-image {
+    height: 220px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .gallery-card {
+    height: 220px;
+    min-height: 220px;
+  }
 }
 
