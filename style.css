@@ -580,10 +580,7 @@ a {
   }
 }
 
-@media (max-width: 820px) {
-  .section {
-    padding: 74px 0;
-  }
+
 
   .menu-toggle {
     display: inline-block;
@@ -644,10 +641,7 @@ a {
   }
 }
 
-@media (max-width: 560px) {
-  .hero {
-    min-height: auto;
-  }
+
 
   .hero-content h1 {
     max-width: none;
