@@ -157,10 +157,12 @@ a {
 }
 
 .hero-bg {
-  background:
+  background-image:
     linear-gradient(120deg, rgba(4, 10, 18, 0.72), rgba(5, 12, 23, 0.52)),
-    url("assets/лох.jpg") center/cover no-repeat;
-  transform: scale(1.04);
+    url("./assets/лох.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-overlay {
