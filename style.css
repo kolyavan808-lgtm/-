@@ -557,14 +557,7 @@ a {
   transition: none;
 }
 
-@media (max-width: 1080px) {
-  .hero-grid,
-  .facts-layout,
-  .about-grid,
-  .places-grid,
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
+
 
   .facts-list {
     grid-template-columns: 1fr 1fr;
@@ -718,12 +711,11 @@ a {
 }
 @media (max-width: 768px) {
   .gallery-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .gallery-card {
-    width: 100%;
-    height: 220px;
+    height: 160px;
   }
 }
