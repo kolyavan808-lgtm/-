@@ -1,1 +1,1 @@
-Биробиджан.github.io
+Birobidshan.github.io
