@@ -549,37 +549,7 @@ a {
   background: rgba(255, 255, 255, 0.05);
 }
 
-.reveal,
-.reveal-delay-1,
-.reveal-delay-2,
-.reveal-delay-3,
-.reveal-visible {
-  opacity: 1;
-  transform: none;
-  transition: none;
-}
 
-
-
-  
-
-  .hero-card,
-  .sources-box,
-  .info-card,
-  .fact-item,
-  .place-body,
-  .timeline-content {
-    padding: 20px;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-  }
-}
 .hero-bg {
   background-image:
     linear-gradient(120deg, rgba(4, 10, 18, 0.72), rgba(5, 12, 23, 0.52)),
