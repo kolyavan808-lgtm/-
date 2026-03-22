@@ -680,4 +680,6 @@ a {
     min-height: 220px;
   }
 }
-
+.hero-actions {
+  display: none;
+}
